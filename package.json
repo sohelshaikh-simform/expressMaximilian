@@ -1,0 +1,18 @@
+{
+  "dependencies": {
+    "ejs": "^3.1.9",
+    "express": "^4.18.2",
+    "express-handlebars": "^7.0.4",
+    "hbs": "^4.2.0",
+    "pug": "^3.0.2"
+  },
+  "name": "12-serving-files-statically",
+  "version": "1.0.0",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}

@@ -1,0 +1,13 @@
+extends layouts/main-layout.pug
+
+block style 
+    link(rel="stylesheet", href="/css/product.css")
+
+block content 
+     main
+        .grid
+             each product in prods
+                 article.card_product-item 
+                     header.card_header
+                        h1.product_title #{product.title}
+    
