@@ -5,6 +5,7 @@ const app = express();
 
 app.set('view engine','hbs')
 // app.set('views','views')
+
 app.set('views',path.join(__dirname,'views','handlebar'))
 // app.use(express.json())
 

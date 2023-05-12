@@ -9,8 +9,7 @@ const controller=require('../controller/myControlller')
 // const products=[]
 
 
-router.get('/add-product',controller.addProductGet);
-router.post('/add-product',controller.addProductPost);
+router.route('/add-product').get(controller.addProductGet).post(controller.addProductPost);
 
 // exports.routes=router;
 module.exports=router;

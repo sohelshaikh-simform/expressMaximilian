@@ -9,12 +9,14 @@ const addProductGet = (req, res) => {
   });
 };
 
+// path for file operation
 const p = path.join(
   path.dirname(process.mainModule.filename),
   "data",
   "products.json"
 );
 
+// add Product to file
 const addProductPost = async (req, res) => {
   const products = await fs.readFile(p, "utf-8");
   const products2 = products?JSON.parse(products):[];
@@ -24,6 +26,7 @@ const addProductPost = async (req, res) => {
   res.redirect("/");
 };
 
+// Show All Product
 const shopProduct = async (req, res) => {
   // res.sendFile(path.join(__dirname, '../','views', 'shop.html'));
 
